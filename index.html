@@ -2,31 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Show Image by Name</title>
+  <title>Display Image</title>
   <style>
-    #displayedImage {
-      display: none;
+    img {
       max-width: 400px;
       margin-top: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
 <body>
-  <h2>Enter the name of your image file (e.g., AJAH.jpg)</h2>
-  <button onclick="askAndShowImage()">Enter Image Name</button>
-  <br />
-  <img id="displayedImage" alt="Your Image will appear here" />
-  
-  <script>
-    function askAndShowImage() {
-      const imageName = prompt("Please enter the image file name (with extension):");
-      if (imageName) {
-        const img = document.getElementById('displayedImage');
-        // Assuming image is in the root folder of the repository
-        img.src = imageName;
-        img.style.display = 'block';
-      }
-    }
-  </script>
+  <h2 style="text-align:center;">Here is your image:</h2>
+  <img src="pic01.jpg" alt="Picture 01" />
 </body>
 </html>
